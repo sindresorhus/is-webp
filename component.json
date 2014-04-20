@@ -1,0 +1,30 @@
+{
+  "name": "is-webp",
+  "version": "0.0.0",
+  "description": "Check if a Buffer/Uint8Array is a WebP image",
+  "license": "MIT",
+  "repo": "sindresorhus/is-webp",
+  "scripts": [
+    "index.js"
+  ],
+  "keywords": [
+    "webp",
+    "google",
+    "weppy",
+    "network",
+    "graphics",
+    "image",
+    "img",
+    "pic",
+    "picture",
+    "photo",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "exif",
+    "binary",
+    "buffer",
+    "uint8array"
+  ]
+}
