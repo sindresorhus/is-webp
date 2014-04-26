@@ -27,7 +27,7 @@ $ component install sindresorhus/is-webp
 ```js
 var readChunk = require('read-chunk'); // npm install read-chunk
 var isWebp = require('is-webp');
-var buffer = readChunk('unicorn.webp', 0, 12);
+var buffer = readChunk.sync('unicorn.webp', 0, 12);
 
 isWebp(buffer);
 //=> true
