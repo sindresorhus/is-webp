@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Check if a Buffer/Uint8Array is a WebP image",
   "license": "MIT",
-  "repo": "sindresorhus/is-webp",
+  "repository": "sindresorhus/is-webp",
   "scripts": [
     "index.js"
   ],
