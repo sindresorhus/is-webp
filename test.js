@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('assert');
 var readChunk = require('read-chunk');
-var isWebp = require('./index');
+var isWebp = require('./');
 
 function check(filename) {
 	return isWebp(readChunk.sync(filename, 0, 12));

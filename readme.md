@@ -11,14 +11,6 @@ Used by [image-type](https://github.com/sindresorhus/image-type).
 $ npm install --save is-webp
 ```
 
-```sh
-$ bower install --save is-webp
-```
-
-```sh
-$ component install sindresorhus/is-webp
-```
-
 
 ## Usage
 
