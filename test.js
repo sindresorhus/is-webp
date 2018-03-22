@@ -1,13 +1,10 @@
-'use strict';
-var assert = require('assert');
-var readChunk = require('read-chunk');
-var isWebp = require('./');
+import test from 'ava';
+import readChunk from 'read-chunk';
+import m from '.';
 
-function check(filename) {
-	return isWebp(readChunk.sync(filename, 0, 12));
-}
+const check = filename => m(readChunk.sync(filename, 0, 12));
 
-it('should detect WebP from Buffer', function () {
-	assert(check('fixture.webp'));
-	assert(!check('fixture.png'));
+test('detects WebP from Buffer', t => {
+	t.true(check('fixture.webp'));
+	t.false(check('fixture.png'));
 });
