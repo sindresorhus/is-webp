@@ -51,6 +51,7 @@ It only needs the first 12 bytes.
 ## Related
 
 - [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
+- [is-webp-extended](https://github.com/mooyoul/is-webp-extended) - Extended version of is-webp package which supports Animated WebP
 
 
 ## License
