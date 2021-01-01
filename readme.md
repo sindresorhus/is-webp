@@ -1,4 +1,4 @@
-# is-webp [![Build Status](https://travis-ci.org/sindresorhus/is-webp.svg?branch=master)](https://travis-ci.org/sindresorhus/is-webp)
+# is-webp
 
 > Check if a Buffer/Uint8Array is a [WebP](https://en.wikipedia.org/wiki/WebP) image
 
