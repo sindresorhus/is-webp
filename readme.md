@@ -2,22 +2,21 @@
 
 > Check if a Buffer/Uint8Array is a [WebP](https://en.wikipedia.org/wiki/WebP) image
 
-
 ## Install
 
+```sh
+npm install is-webp
 ```
-$ npm install is-webp
-```
-
 
 ## Usage
 
 ##### Node.js
 
 ```js
-const readChunk = require('read-chunk');
-const isWebp = require('is-webp');
-const buffer = readChunk.sync('unicorn.webp', 0, 12);
+import {readChunk} from 'read-chunk';
+import isWebp from 'is-webp';
+
+const buffer = await readChunk('unicorn.webp', {length: 12});
 
 isWebp(buffer);
 //=> true
@@ -38,22 +37,15 @@ xhr.onload = () => {
 xhr.send();
 ```
 
-
 ## API
 
 ### isWebp(buffer)
 
-Accepts a Buffer (Node.js) or Uint8Array.
+Accepts a `Buffer` (Node.js) or `Uint8Array`.
 
 It only needs the first 12 bytes.
-
 
 ## Related
 
 - [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
 - [is-webp-extended](https://github.com/mooyoul/is-webp-extended) - Extended version of this package which supports checking for animated WebP
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

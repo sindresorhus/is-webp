@@ -1,8 +1,8 @@
 import test from 'ava';
-import readChunk from 'read-chunk';
-import m from '.';
+import {readChunkSync} from 'read-chunk';
+import isWebp from './index.js';
 
-const check = filename => m(readChunk.sync(filename, 0, 12));
+const check = filename => isWebp(readChunkSync(filename, {length: 12}));
 
 test('detects WebP from Buffer', t => {
 	t.true(check('fixture.webp'));
